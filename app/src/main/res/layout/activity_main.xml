@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/ba"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+tools:context=".MainActivity">
+
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:textSize="16dp"
+        android:hint="Họ và Tên:"
+        android:paddingTop="8dp"
+        android:paddingLeft="4dp">
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+ </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:textSize="16dp"
+        android:hint="SĐT:"
+        android:paddingTop="8dp"
+        android:paddingLeft="4dp">
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/edt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        />
+
+  </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:textSize="16dp"
+        android:hint="Tuổi:"
+        android:paddingTop="8dp"
+        android:paddingLeft="4dp">
+
+    </TextView>
+
+    <SeekBar
+        android:id="@+id/seekBarAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginTop="11dp"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="100"
+
+
+        android:progress="0"
+        android:progressTint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/textViewSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="0/100"
+        ></TextView>
+
+
+</LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:textSize="16dp"
+        android:hint="Giới tính:"
+        android:paddingTop="8dp"
+        android:paddingLeft="4dp"
+
+        />
+
+    <Switch
+        android:id="@+id/cbx_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nam"
+        android:textSize="16dp"
+        android:layout_marginRight="190dp"/>
+
+
+  </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp" >
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:hint="Trình độ:"
+        android:paddingTop="10dp"
+        android:paddingLeft="4dp"
+        android:textSize="16dp"
+        android:paddingBottom="-16dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:id="@+id/rad_gr"
+
+        >
+        <RadioButton
+            android:id="@+id/rad_cd"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="CĐ"
+            android:checked="true"
+            android:textSize="16dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rad_dh"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="ĐH"
+            android:textSize="16dp"
+            />
+
+        <RadioButton
+            android:id="@+id/rad_ch"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="CH"
+            android:textSize="16dp"
+            />
+        >
+    </RadioGroup>
+    ></LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:hint="Thể thao:"
+        android:paddingTop="10dp"
+        android:paddingLeft="4dp"
+        android:textSize="16dp"
+        android:paddingBottom="-16dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cbx_sport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textSize="16dp"
+        />
+
+
+</LinearLayout>
+
+
+<Button
+    android:id="@+id/btn_register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="#F26F33"
+    android:text="Register"
+    android:textColor="@color/white"
+    android:textSize="16dp" />
+
+
+
+</LinearLayout>
