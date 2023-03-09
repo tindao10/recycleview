@@ -30,12 +30,12 @@ public class MainActivity2 extends AppCompatActivity {
         txtSex = findViewById(R.id.txt_sex);
         txtSport = findViewById(R.id.txt_sport);
 
-//        txtName.setText(User.name);
-//        txtAge.setText(User.age);
-//        txtPhone.setText(User.phone);
-//        txtLever.setText(User.level);
-//        txtSex.setText(User.sex);
-//        txtSport.setText(User.sport);
+        txtName.setText(User.name);
+        txtAge.setText(User.age);
+        txtPhone.setText(User.phone);
+        txtLever.setText(User.level);
+        txtSex.setText(User.sex);
+        txtSport.setText(User.sport);
 
 
 
